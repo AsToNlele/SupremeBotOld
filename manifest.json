@@ -1,38 +1,33 @@
 {
-    "name": "SupremeBot",
-    "version": "1.0",
-    "description": "Supreme Buying bot",
-    "permissions": [
-        "activeTab",
-        "declarativeContent",
-        "storage",
-        "*://*/*",
-        "tabs"
-    ],
-    "background": {
-        "scripts": [
-            "app.js"
-        ],
-        "persistent": false
-    },
-    "content_scripts": [
-        {
-            "matches": [
-                "https://*/*"
-            ],
-            "js": [
-                "auto.js"
-            ],
-            "run_at": "document_end"
-        }
-    ],
-    "page_action": {
-        "default_popup": "popup.html"
-    },
-    "icons": {
-        "16": "img/icon-16.png",
-        "48": "img/icon-48.png",
-        "128": "img/icon-128.png"
-    },
-    "manifest_version": 2
+  "name": "SupremeBot",
+  "version": "1.0",
+  "description": "Supreme Buying bot",
+  "permissions": [
+    "activeTab",
+    "declarativeContent",
+    "storage",
+    "*://*/*",
+    "tabs"
+  ],
+  "background": {
+    "scripts": ["app.js"],
+    "persistent": false
+  },
+  "options_page": "options.html",
+  "content_scripts": [
+    {
+      "matches": ["https://*/*"],
+      "js": ["auto.js"],
+      "run_at": "document_end"
+    }
+  ],
+  "page_action": {
+    "default_popup": "popup.html"
+  },
+  "icons": {
+    "16": "img/icon-16.png",
+    "48": "img/icon-48.png",
+    "128": "img/icon-128.png"
+  },
+  "manifest_version": 2
 }

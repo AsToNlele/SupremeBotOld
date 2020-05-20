@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CSS only -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+
+    <!-- JS, Popper.js, and jQuery -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="header">
+      <img src="images/logo.jpg" alt="" srcset="" />
+    </div>
+    <div class="cont">
+      <!-- <label for="url">Item URL</label>
+      <input type="text" name="url" id="urlBar" />
+      <button class="btn-red" id="save">SAVE</button>
+      <span id="valid"></span> -->
+      <div class="row">
+        <!-- Shipping Info -->
+        <div class="col-md-6">
+          <h1>Shipping Information</h1>
+          <label for="fullName">Full Name</label>
+          <input type="text" name="fullName" id="fullName" />
+          <br />
+          <label for="email">Email</label>
+          <input type="text" name="email" id="email" />
+          <br />
+          <label for="tel">Telephone Number</label>
+          <input type="text" name="tel" id="tel" />
+          <br />
+          <label for="address1">Address 1</label>
+          <input type="text" name="address1" id="address1" />
+          <br />
+          <label for="address2">Address 2</label>
+          <input type="text" name="address2" id="address2" />
+          <br />
+          <label for="city">City</label>
+          <input type="text" name="city" id="city" />
+          <br />
+          <label for="postcode">Postcode</label>
+          <input type="text" name="postcode" id="postcode" />
+          <br />
+          <label for="country">Country</label>
+          <select name="country" id="country"
+            ><option value="GB">UK</option>
+            <option value="NB">UK (N. IRELAND)</option>
+            <option value="">-</option>
+            <option value="AT">AUSTRIA</option>
+            <option value="BY">BELARUS</option>
+            <option value="BE">BELGIUM</option>
+            <option value="BG">BULGARIA</option>
+            <option value="HR">CROATIA</option>
+            <option value="CZ">CZECH REPUBLIC</option>
+            <option value="DK">DENMARK</option>
+            <option value="EE">ESTONIA</option>
+            <option value="FI">FINLAND</option>
+            <option value="FR">FRANCE</option>
+            <option value="DE">GERMANY</option>
+            <option value="GR">GREECE</option>
+            <option value="HU">HUNGARY</option>
+            <option value="IS">ICELAND</option>
+            <option value="IE">IRELAND</option>
+            <option value="IT">ITALY</option>
+            <option value="LV">LATVIA</option>
+            <option value="LT">LITHUANIA</option>
+            <option value="LU">LUXEMBOURG</option>
+            <option value="MC">MONACO</option>
+            <option value="NL">NETHERLANDS</option>
+            <option value="NO">NORWAY</option>
+            <option value="PL">POLAND</option>
+            <option value="PT">PORTUGAL</option>
+            <option value="RO">ROMANIA</option>
+            <option value="RU">RUSSIA</option>
+            <option value="SK">SLOVAKIA</option>
+            <option value="SI">SLOVENIA</option>
+            <option value="ES">SPAIN</option>
+            <option value="SE">SWEDEN</option>
+            <option value="CH">SWITZERLAND</option>
+            <option value="TR">TURKEY</option></select
+          >
+          <br /><br />
+          <button class="btn-red" id="saveShippingInfo">SAVE</button>
+        </div>
+        <!-- Credit Card Info -->
+        <div class="col-md-6">
+          <h1>Credit Card Information</h1>
+          <label for="brand">CC Brand</label>
+          <select name="brand" id="brand">
+            <option value="visa">Visa</option>
+            <option value="master">Mastercard</option>
+          </select>
+          <br />
+          <label for="ccNumber">CC Number</label>
+          <input type="text" name="ccNumber" id="ccNumber" />
+          <br />
+          <label for="ccMonth">CC Month</label>
+          <select name="ccMonth" id="ccMonth">
+            <option value="01">01</option>
+            <option value="02">02</option>
+            <option value="03">03</option>
+            <option value="04">04</option>
+            <option value="05">05</option>
+            <option value="06">06</option>
+            <option value="07">07</option>
+            <option value="08">08</option>
+            <option value="09">09</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+          </select>
+          <br />
+          <label for="ccYear">CC Year</label>
+          <select name="ccYear" id="ccYear">
+            <option value="2020">2020</option>
+            <option value="2021">2021</option>
+            <option value="2022">2022</option>
+            <option value="2023">2023</option>
+            <option value="2024">2024</option>
+            <option value="2025">2025</option>
+            <option value="2026">2026</option>
+            <option value="2027">2027</option>
+            <option value="2028">2028</option>
+            <option value="2029">2029</option>
+            <option value="2030">2030</option>
+          </select>
+          <br />
+          <label for="ccCVV">CC CVV</label>
+          <input type="text" name="ccCVV" id="ccCVV" />
+          <br /><br />
+          <button class="btn-red" id="saveCCInfo">SAVE</button>
+        </div>
+      </div>
+    </div>
+    <div class="fixed-footer">
+      <p>Created by AsToN</p>
+      <!-- https://github.com/astonlele -->
+    </div>
+  </body>
+  <script src="options.js"></script>
+</html>
