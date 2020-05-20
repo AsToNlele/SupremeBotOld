@@ -22,6 +22,13 @@ let ccInfo = {
   ccCVV: '',
 };
 
+function ccFix(value) {
+  return value
+    .replace(/[^0-9]/g, '')
+    .replace(/\W/gi, '')
+    .replace(/(.{4})/g, '$1 ');
+}
+
 // chrome.storage.sync.get('url', function (data) {
 //   document.querySelector('#urlBar').value = data.url;
 // });
@@ -64,7 +71,7 @@ const saveShippingInfo = () => {
 const saveCCInfo = () => {
   ccInfo = {
     brand: document.querySelector('#brand').value,
-    ccNumber: document.querySelector('#ccNumber').value,
+    ccNumber: ccFix(document.querySelector('#ccNumber').value),
     ccMonth: document.querySelector('#ccMonth').value,
     ccYear: document.querySelector('#ccYear').value,
     ccCVV: document.querySelector('#ccCVV').value,

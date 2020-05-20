@@ -9,7 +9,6 @@ function loadStatus() {
     loadSave(result.status);
   });
 }
-
 function loadSave(_status) {
   chrome.storage.sync.get(['item'], function (result) {
     const res = JSON.parse(result.item);
